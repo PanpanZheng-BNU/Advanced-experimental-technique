@@ -7,7 +7,6 @@ pygame.display.set_caption("Pygame 最小开发框架") # Setting the title as "
 while True:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
+            pygame.quit()
             sys.exit()
         pygame.display.update()
-
-pygame.quit()
